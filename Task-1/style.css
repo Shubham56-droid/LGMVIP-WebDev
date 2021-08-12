@@ -10,11 +10,16 @@
     transition: 0.5s  all linear;
 }
 
+
+
+
 .main
 {
+   
    height: 100%;
    width: 100%;
    background-color: #fff;
+ 
 }
 .home-page
 {
@@ -91,7 +96,7 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
-    ;
+    
 } 
 
 .slides
@@ -559,9 +564,9 @@
 
 .pricing-page
 {
-   position: relative;
+   
    padding: 40px;
-   height: 72vh;
+   height: 90vh;
    width:100%;
    background-color: #fff;
 
@@ -622,5 +627,136 @@
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 20px;
+}
+
+.video-project
+{
+    padding-top: 30px;
+    position: relative;
+    margin-top: 30px;
+    height: 80vh;
+    width:100%;
+   background-color: rgb(29, 0, 68);
+   
+}
+.video-project h1
+{
+     text-align: center;
+     font-size: 48px;
+     color: #fff;
+     text-transform: capitalize;
+}
+.video-project .container
+{
+    position: relative;
+    height: 370px;
+    width:100%;
+    padding-top: 25px;
+    
+    display: flex;
+    overflow-x: scroll;
+}
+.video-project .container  .vid
+{
+    position: relative;
+    height: 281px;
+    width: 500px;
+    margin: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-project .container  .vid::after
+{
+    content:'';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.video-project .container  .vid:hover::after
+{
+    background-color: rgba(0, 0, 0, 0.767);
+    transition: 0.5s;
+}
+
+::-webkit-scrollbar
+{
+    width: 0px;
+}
+
+.video-project .container  .vid video
+{
+    position: relative;
+    height: 330px;
+    width: 500px;
+    
+}
+.video-project .container  .vid  img
+{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.video-view
+{
+    position: fixed;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.925);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: none;
+}
+.video-view.active
+{
+    display: inline-block;
+}
+
+
+
+
+.video-view .container
+{
+    position: relative;
+    height: 500px;
+    width: 800px;
+    background-color: rgba(192, 192, 192, 0.377);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.video-view .container video
+{
+   height: 400px;
+   width: 700px;
+}
+.video-view i{
+    font-size: 43px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    z-index:1000;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
 }
 
