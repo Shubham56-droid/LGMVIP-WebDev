@@ -666,6 +666,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .video-project .container  .vid::after
@@ -728,8 +729,6 @@
 {
     display: inline-block;
 }
-
-
 
 
 .video-view .container

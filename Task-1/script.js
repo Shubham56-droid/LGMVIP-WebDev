@@ -1,4 +1,4 @@
-// image  slider  script
+//  image rendering done
 
 var counter = 1;
 setInterval(function () {
@@ -10,27 +10,19 @@ setInterval(function () {
   }
 }, 5000);
 
+// video redendering done
+
+
 let imgbase = document.querySelector(".img-base");
 let videoView = document.querySelector(".video-view");
 const videoproject = document.querySelector(".video-project");
 
 
-videoproject.addEventListener("click", (e) => {
-  if (e.target.classList.contains("img-base")) {
-   document.getElementById("onckc").click(); 
-  }
-});
-
-
-
-
-
-
-document.querySelectorAll(".video-project video").forEach((vid)=>{
+document.querySelectorAll(".video-project img").forEach((vid)=>{
 
   vid.onclick =() =>{
     videoView.classList.add("active");
-    document.querySelector('.video-view video').src = vid.getAttribute(src);
+    document.querySelector('.video-view video').src = vid.getAttribute("data-target") ;
   }
 });
 
