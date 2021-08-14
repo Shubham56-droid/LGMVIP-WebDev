@@ -29,3 +29,7 @@ document.querySelectorAll(".video-project img").forEach((vid)=>{
 function popupproject() {
   videoView.classList.remove("active");
 }
+
+
+// jquery owl crousel
+
