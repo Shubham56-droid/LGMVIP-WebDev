@@ -723,6 +723,10 @@
   color: #ffffff;
   font-size: 25px;
 }
+.our_team .team_member .member_img .social_media .fab:hover{
+   color: rgb(255, 217, 0);
+}
+
 
 .our_team .team_member .member_img:hover .social_media {
   transform: scale(1);
@@ -733,7 +737,7 @@
   position: relative;
   height: 150vh;
   width: 100%;
-  background-color: #ddd;
+  background-color: rgb(161, 161, 161);
   margin-top: 30px;
   padding-top: 50px;
 }
@@ -772,4 +776,90 @@
 }
 
 
+.img-gallery .gallery .small-img
+{
+  position: relative;
+  margin: auto;
+  margin-top: 40px;
+  height: 150px;
+  width: 70%;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 0;
+  overflow-x: scroll;
+}
 
+
+.img-gallery .gallery .small-img  img{
+  position: relative;
+   height: 100px;
+   width: 140px;
+   z-index: 1;
+   bottom: 0;
+   cursor: pointer;
+   margin-left: 15px;
+}
+
+.navigation-manual-img 
+{
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.manual-btn-img
+{
+  position: relative;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin: 6px;
+}
+
+
+.manual-btn-img:hover {
+  background-color: #fff;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -100%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -200%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -300%;
+}
+
+#radio5:checked ~ .first {
+  margin-left: -400%;
+}
+
+.splide__slide img {
+	width : 570px;
+	height:  450px;
+  
+}
+.splide
+{
+  position: relative;
+  width: 70%;
+  margin:auto;
+  margin-top: 40px;
+}
+.splide__track
+{
+  position: relative;
+  margin: auto;
+}

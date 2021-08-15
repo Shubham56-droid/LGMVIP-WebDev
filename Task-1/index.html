@@ -5,17 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zippy-Task1-Internship</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js">
     <link rel="stylesheet" href="style.css" />
-    <!-- font  awesome  cdn -->
-    <link
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      rel="stylesheet"
-    />
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css">
 
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-// Add the new slick-theme.css if you want the default styling
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-
+  
 
   </head>
 
@@ -487,32 +483,72 @@
       <div class="img-gallery">
         <div class="gallery" id="gallery">
           <h1>Life At Zippy</h1>
-         
-          <div class="your-class">
-            <div>your content</div>
-            <div>your content</div>
-            <div>your content</div>
+ 
+          <div class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="./images/life1.jpg" >
+                </li>
+                <li class="splide__slide">
+                   <img src="./images/life2.jpg" >
+                  </li>
+                <li class="splide__slide">
+                  <img src="./images/life3.jpg" >
+                </li>
+              </ul>
+            </div>
           </div>
+
+          <div id="secondary-slider" class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="./images/life1.jpg">
+                </li>
+                <li class="splide__slide">
+                  <img src="./images/life2.jpg">
+                </li>
+                <li class="splide__slide">
+                  <img src="./images/life3.jpg">
+                </li>
+                <li class="splide__slide">
+                  <img src="./images/life4.jpg">
+                </li>
+                <li class="splide__slide">
+                  <img src="./images/life5.jpg">
+                </li>
+                <li class="splide__slide">
+                  <img src="./images/life6.jpg">
+                </li>
+                <li class="splide__slide">
+                  <img src="./images/life7.jpg">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+
+
           
-         
         </div>
       </div>
 
       <!----------------------Image gallary-end----------------------->
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+      new Splide( '.splide' ).mount();
+    </script>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-     
-      <script type="text/javascript">
-        $(document).ready(function(){
-          $('.your-class').slick({
-            setting_name: setting-value
-          });
-        });
-      </script>
-    
+    <script>
+      document.addEventListener( 'DOMContentLoaded', function () {
+        new Splide( '.splide' ).mount();
+      } );
+    </script>
     <script src="script.js"></script>
+  
+
   </body>
 </html>
