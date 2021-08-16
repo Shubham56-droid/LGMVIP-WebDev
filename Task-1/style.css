@@ -735,7 +735,7 @@
 .img-gallery
 {
   position: relative;
-  height: 150vh;
+  height: 130vh;
   width: 100%;
   background-color: rgb(161, 161, 161);
   margin-top: 30px;
@@ -758,108 +758,333 @@
 
 .img-gallery .gallery .main-img
 {
-  position: relative;
-  height: 450px;
-  width: 700px;
-  margin: auto;
-  margin-top: 30px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-.img-gallery .gallery .main-img img{
-  height: inherit;
-  width: inherit;
-}
-
-
-.img-gallery .gallery .small-img
-{
-  position: relative;
+  height: 400px;
+  width: 600px;
   margin: auto;
   margin-top: 40px;
-  height: 150px;
-  width: 70%;
+}
+.img-gallery .gallery .main-img img
+{
+  height: 100%;
+  width: 100%;
+}
+
+.img-gallery .gallery .box-img
+{
+  width: 50%;
+  height: 140px;
+  margin: auto;
+  margin-top: 50px;
   display: flex;
-  padding-top: 10px;
-  padding-bottom: 0;
+  align-items: center;
   overflow-x: scroll;
 }
 
-
-.img-gallery .gallery .small-img  img{
-  position: relative;
-   height: 100px;
-   width: 140px;
-   z-index: 1;
-   bottom: 0;
+.img-gallery .gallery .box-img img
+{
+   width: 150px;
+   height: auto;
+   margin: 10px;
    cursor: pointer;
-   margin-left: 15px;
+   z-index: 1;
 }
 
-.navigation-manual-img 
+
+.signup-page
 {
-  position: absolute;
+   height: 50vh;
+   width: 100%;
+   padding: 40px;
+   background-image: url("./images/background-2.jpg");
+   background-size: cover;
+   transition: 0.5s;
+}
+
+.signup-page.activated
+{
+   height: 80vh;
+   transition: 0.5s;
+}
+
+.signup-page .signup
+{
+  height: 100%;
   width: 100%;
-  height: 6px;
+  margin-top: 10px;
+}
+.signup-page .signup h1
+{
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  text-align: center;
+}
+
+.signup-page .signup .signin-box
+{
+  height: 70px;
+  width: auto;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.signup-page .signup .signin-box input
+{
+  outline: none;
+  border: none;
+  width: 400px;
+  height: 40px;
+  padding-left: 15px;
+}
+
+.signup-page .signup .signin-box .btn-both
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
  
 }
+.signup-page .signup .signin-box .btn-both .btn
+{
+  height: 40px;
+  width: 100px;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.signup-page .signup .signin-box .btn-both #signin
+{
+  background-color: rgb(255, 230, 0);
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
 
-.manual-btn-img
+.signup-page .signup .signin-box .btn-both #signup
+{
+  background-color: rgb(129, 0, 235);
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.signup-box
 {
   position: relative;
-  border: 1px solid rgb(255, 255, 255);
-  padding: 4px;
-  border-radius: 10px;
-  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: auto;
+  margin-right: 40%;
+  display: flex;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  transform: scale(0.9);
   transition: 0.5s;
-  margin: 6px;
 }
 
-
-.manual-btn-img:hover {
-  background-color: #fff;
+.signup-box label
+{
+  color: #fff;
+  font-size: 14px;
 }
 
-#radio1:checked ~ .first {
-  margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-  margin-left: -100%;
-}
-
-#radio3:checked ~ .first {
-  margin-left: -200%;
-}
-
-#radio4:checked ~ .first {
-  margin-left: -300%;
-}
-
-#radio5:checked ~ .first {
-  margin-left: -400%;
-}
-
-.splide__slide img {
-	width : 570px;
-	height:  450px;
+.signup-box input
+{
+   height: 35px;
+   width: 370px;
+   outline: none;
+   border: none;
+   padding-left: 10px;
+   background-color: rgba(255, 255, 255, 0.76);
+   color: rgb(24, 24, 24);
+   font-size: 14px;
   
 }
-.splide
+
+.signup-box.deactivate
 {
-  position: relative;
-  width: 70%;
-  margin:auto;
-  margin-top: 40px;
+  display: none;
+  transform: scale(0);
+  transition: 0.5s;
 }
-.splide__track
+
+.blog-page
 {
   position: relative;
+  height: 110vh;
+  width: 100%;
+}
+
+.blog-page .blog
+{
+  margin-top: 50px;
+  height: 100%;
+  width: 100%;
+}
+.blog-page .blog h1
+{
+  color: #000;
+  font-size: 48px;
+  text-align: center;
+}
+.blog-page .blog .container
+{
+  height: 90%;
+  width: 80%;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-page .blog .container .blogs
+{
+   margin: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: rgb(240, 238, 238);
+   height: 90%;
+   padding: 10px;
+}
+.blog-page .blog .container img
+{
+   width: 300px;
+   height: auto;
+   margin-bottom: 20px;
+}
+
+.blog-page .blog .container .blogs h2
+{
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.blog-page .blog .container .blogs span
+{
+  color: rgb(54, 54, 54);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.blog-page .blog .container .blogs p
+{
+  font-size: 15px;
+  color: rgb(20, 20, 20);
+  margin-bottom: 20px;
+}
+
+.blog-page .blog .container .blogs a{
+  text-decoration: none;
+  background-color: rgb(116, 116, 116);
+  color: #fff;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: 0.5s ;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.blog-page .blog .container .blogs a:hover
+{
+  background-color: rgb(255, 157, 0);
+  transition: 0.5s ;
+}
+
+.contact-page
+{
+  height: 90vh;
+  position: relative;
+  width: 100%;
+  
+}
+
+.contact-page .contact
+{
+  margin-top: 70px;
+  display: flex;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.contact-page .contact .contact-info
+{
+   background-color: rgb(255, 196, 0);
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+}
+
+.contact-page .contact .contact-info label
+{
+  font-size: 13px;
+  color: rgb(26, 26, 26);
+  font-weight: bold;
+  line-height: 30px;
+}
+.contact-page .contact .contact-info  input
+{
+  outline: none;
+  border:none;
+  height: 40px;
+  width: 70%;
+  padding-left: 20px;
+}
+
+.contact-page .contact .contact-info textarea
+{
+  outline: none;
+  border:none;
+  min-height: 110px;
+  width: 70%;
+  padding: 10px;
+}
+.contact-page .contact .contact-info a
+{
+  position: relative;
+  background-color: rgb(111, 0, 155);
+  text-decoration: none;
+  color: #fff;
+  width: 70%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.footer
+{
+  height: 35vh;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+
+.footer .follow-us .follow
+{
+   display: flex;
+   flex-direction: column;
+   margin-top: 10px;
+   margin-left: -35px;
+}
+
+.footer .follow-us .follow i
+{
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+.footer .follow-us .follow i:hover
+{
+  color: rgb(91, 0, 151);
 }

@@ -31,57 +31,28 @@ function popupproject() {
 }
 
 
+// rendering  all  images  in  main-img  div  throught  box-img 
+document.querySelectorAll(".box-img img").forEach((img)=>{
 
-var primarySlider = new Splide( '#primary-slider', {
-	type       : 'fade',
-	heightRatio: 0.5,
-	pagination : false,
-	arrows     : false,
-	cover      : true,
-} );
+  img.onclick =() =>{
+    document.querySelector('.main-img img').src = img.getAttribute('src') ;
+  }
+});
 
-var secondarySlider = new Splide( '#secondary-slider' ).mount();
-var primarySlider = new Splide( '#primary-slider' );
-primaryslider.sync( secondarySlider ).mount();
 
-document.addEventListener( 'DOMContentLoaded', function () {
-	var secondarySlider = new Splide( '#secondary-slider', {
-		fixedWidth  : 100,
-		height      : 60,
-		gap         : 10,
-		cover       : true,
-		isNavigation: true,
-		focus       : 'center',
-		breakpoints : {
-			'600': {
-				fixedWidth: 66,
-				height    : 40,
-			}
-		},
-	} ).mount();
-	
-	var primarySlider = new Splide( '#primary-slider', {
-		type       : 'fade',
-		heightRatio: 0.5,
-		pagination : false,
-		arrows     : false,
-		cover      : true,
-	} ); // do not call mount() here.
-	
-	primarySlider.sync( secondarySlider ).mount();
-} );
 
-var secondarySlider = new Splide( '#secondary-slider', {
-	fixedWidth : 100,
-	height     : 60,
-	gap        : 10,
-	rewind     : true,
-	cover      : true,
-	pagination : false,
-	breakpoints : {
-		'600': {
-			fixedWidth: 66,
-			height    : 40,
-		}
-	}
-} ).mount();
+var signup  =  document.querySelector("#signup");
+var  signup_page = document.querySelector(".signup-page");
+var signup_box = document.querySelector(".signup-box");
+var signin  =  document.querySelector("#signin");
+
+signup.addEventListener("click",()=>{
+   signup_page.classList.toggle("activated");
+   signup_box.classList.toggle("deactivate");
+});
+
+signin.addEventListener("click",()=>{
+  signup_page.classList.remove("activated");
+  signup_box.classList.add("deactivate");
+});
+
