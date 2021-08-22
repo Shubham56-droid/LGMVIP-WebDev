@@ -1,30 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { apifetch } from "./component/configration";
+import  Navbar  from "./component/navbar";
+import  Users  from "./component/users";
+import { Loader } from "./component/loader";
 import './App.css';
-import { useState } from 'react';
-import {UseEffectApi} from "./components/useEffectApi";
 
-const App=()=>{
+function App() {
+   const [personData,setpersonData] = useState([]);
+   const [loading,setLoading] = useState(false);
+   const [page,setPage] = useState({minPage:1, maxPage:6});
+   const personDataPresent = personData.length !== 0;
 
- const [users, setUsers] = useState('Hello');
- const loadUsers = async() =>{
-   const response = await fetch ("https://reqres.in/api/users?page=1");
-   const jsonresponse = await response.json;
-   setUsers( jsonresponse);
+   const getpersonData  = async minPage => {
+     if( personData.length !==0 && minPage === 1){
+       return;
+     }
+     setLoading(true);
+     const users = await apifetch(minPage);
+     setPage({ minPage, maxPage: personData.total_pages});
 
- }
+     setLoading(false);
+     setpersonData([...personData,...users.data]);
+     
+   };
+  
+ 
 
-  return (
+  return(
     <div className="App">
-       <button>Get Users</button>
-       <h2>Users:</h2>
-       <ul>
-        {users.map(({id,login}) =>
-        (
-          <li key={id}>Name:{login}</li>
-        ))}
-       </ul>
+     <Navbar getpersonData={ getpersonData }/>
+     { !loading && !personDataPresent && (
+       <div className="container">
+      <div class="typewriter">
+        <div class="typewriter-text">Show Data Of The Users </div>
+      </div>
+       </div>
+       
+     )}
+
+      {loading && (
+        <Loader/>
+      )}
+
+      { !loading && personData && <Users personData={personData}/>}
+
     </div>
-  )
+  );
 }
 
 export default App;
