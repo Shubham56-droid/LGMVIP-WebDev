@@ -22,6 +22,7 @@
 <br/>
 <h3>🎯Website links</h3>
 <hr/>
-<a href="">link to the webpage</a>
-<a href="">link to the project</a>
+<a href="https://goofy-bardeen-81ee5e.netlify.app/">link to the webpage</a>
+<br/>
+<a href="https://github.com/Shubham56-droid/LGMVIP-WebDev/edit/main/Task-1">link to the project</a>
 
