@@ -14,7 +14,7 @@ This repository  contains all  task  which  i accomplish in this internship.
 <br/>
 <h3>🎯Task - 2 : Creating A React App to fetch data from an API </h3> 
 <hr/>
-<img src="" />
+<img src="/Task-2/Screenshot (354).png" />
 <a href="">Link to the website</a>
 <br/>
 <a href="">Link to the projects</a>
