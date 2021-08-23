@@ -16,5 +16,6 @@
 <a href="https://github.com/Shubham56-droid/LGMVIP-WebDev/tree/main/Task-2">link to the projects</a>
 <br/>
 <h3>Images of application</h3>
-<img src="./Screentshot"  />
-<img src=""  />
+<img src="./Screenshot (353).png"  />
+<br/>
+<img src="./Screenshot (354).png"  />
