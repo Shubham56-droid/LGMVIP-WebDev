@@ -7,7 +7,7 @@ This repository  contains all  task  which  i accomplish in this internship.
 
 <h3>🎯Task - 1 : Creating  A website Using Html,CSS and JavaScript</h3> 
 <hr/>
-<img src="" />
+<img src="/Task-1/screenshot/Screenshot (366).png" />
 <a href="">Link to the website</a>
 <br/>
 <a href="">Link to the projects</a>
