@@ -23,7 +23,7 @@
 {
   min-height: 100vh;
   width: 100%;
-  background-image: url("https://wallpapercave.com/wp/wp2046360.jpg");
+  background-image: url("./images/background.jpg");
   background-size: cover;
   background-position: center;
   padding: 10px;
@@ -203,3 +203,49 @@
   color: rgb(255, 255, 255);
   font-size: 18px;
 }
+
+.loader
+{
+  height:300px;
+  width: 300px;
+  margin: auto;
+  margin-top: 100px;
+  backdrop-filter: blur(65px);
+  background-color: rgba(255, 255, 255, 0.164);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+  0%
+  {
+    transform: rotateY(0deg)
+  }
+  100%
+  {
+    transform: rotateY(360deg)
+  }
+}
+
+
+.loader .bar
+{
+  height:250px;
+  width: 250px;
+  background-color: rgba(218, 218, 218, 0.445);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader .bar p
+{
+   color: #fff;
+   font-size: 32px;
+   font-weight: bold;
+}
+
