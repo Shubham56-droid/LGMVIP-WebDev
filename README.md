@@ -4,7 +4,7 @@ Web-developemnt intern at  Letsgrowmore (Tasks)
 Hi, there i am  shubham bawankar web development intern at LetsGrowMore.
 This repository  contains all  task  which  i accomplish in this internship.
 </p>
-<hr/>
+
 <h3>Task - 1 : Creating  A website Using Html,CSS and JavaScript</h3> 
 <hr/>
 <img src="" />
