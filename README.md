@@ -20,3 +20,5 @@ This repository  contains all  task  which  i accomplish in this internship.
 <a href="https://github.com/Shubham56-droid/LGMVIP-WebDev/tree/main/Task-2">Link to the projects</a>
 <hr/>
 My profile on <a href="https://github.com/Shubham56-droid">github</a>
+<h2>Certificate Of Internship</h2>
+<img src="./certificate/"/>
